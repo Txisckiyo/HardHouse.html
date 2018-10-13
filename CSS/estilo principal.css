@@ -43,3 +43,9 @@ html, body {
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 }
+
+a {
+    color: white;
+    text-align: left;
+    
+}
