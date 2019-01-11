@@ -51,6 +51,9 @@ div {
     border-style: dotted dashed solid double;
 }
 
+.flex-container {
+      float: block;
+
 logo{
     <link rel="apple-touch-icon" sizes="57x57" href="C:/Users/Guillermo/Desktop/Mi pagina web/Logo/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="57x57" href="C:/Users/Guillermo/Desktop/Mi pagina web/Logo/apple-icon-57x57.png">
