@@ -1,0 +1,947 @@
+body {
+    background-color: #282828;
+    color: #aaaaaa;
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+html,
+body { height: 100% }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #f19808;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+/*START PRELOADER DESIGN*/
+.preloader {
+    background: #FFF;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+.status,
+.status-mes {
+    background-image: url(../img/status.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    position: absolute;
+    top: 50%;
+    width: 200px;
+}
+/*END PRELOADER DESIGN*/
+/*START SCROLL TO TOP*/
+.topcontrol {
+    background: #222 none repeat scroll 0 0;
+    border-radius: 50px;
+    bottom: 5px;
+    box-shadow: 0 1px 11px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    cursor: pointer;
+    font-size: 26px;
+    height: 40px;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    padding: 5px 12px;
+    position: fixed;
+    right: 5px;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    width: 40px;
+}
+.topcontrol:hover {
+    background: #eec23b;
+    color: #fff;
+}
+/*END SCROLL TO TOP*/
+/*START BTN STYLE*/
+.btn-light-bg {
+    border: 1px solid #ddd;
+    border-radius: 0;
+    color: #444;
+    font-family: "Montserrat",sans-serif;
+    font-size: 18px;
+    padding: 8px 40px;
+    text-transform: capitalize;
+    transition: all 0.2s ease 0s;
+}
+.btn-light-bg:hover,
+.btn-light-bg:focus {
+    background: #eec23b;
+    border: 1px solid #eec23b;
+    color: #fff;
+}
+/*END BTN STYLE*/
+.section-padding { padding: 60px 0 }
+.section-title h2 {
+color: #fff;
+padding-bottom: 10px;
+text-transform: uppercase;
+}
+.section-title h2 span { color: #eec23b }
+.section-title-white { color: #fff }
+.section-title-black {color: #333!important; }
+.line {
+    background: #eec23b none repeat scroll 0 0;
+    display: block;
+    height: 2px;
+    margin: 20px auto 60px;
+    width: 100px;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 01.END GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+/*
+ * ----------------------------------------------------------------------------------------
+ * 02.BOOTSTRAP NAVIGATION OVERRIDES
+ * ----------------------------------------------------------------------------------------
+*/
+.navbar-default {
+    background: #eec23b none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0;
+    margin-bottom: 0;
+    transition: all 0.2s ease-in-out 0s;
+    width: 100%;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    background: #fff none repeat scroll 0 0;
+    color: #eec23b !important;
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #eec23b  !important;
+    background-color: transparent;
+}
+.navbar-brand { padding: 12px }
+@media only screen and (max-width:480px) { 
+    .navbar-brand {
+        padding: 0;
+        margin-left: 10px;
+    }
+}
+.navbar-brand img { width: 150px }
+.navbar-default .navbar-nav>li>a {
+    font-size: 12px;
+    font-weight: 700;
+}
+.menu-top li a {
+    color: #fff !important;
+    font-family: montserrat;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+.menu-top li a:hover {
+    background: #fff!important;
+    color: #eec23b !important;
+}
+@media only screen and (max-width:768px) { 
+    .navbar-default .navbar-nav > li > a { margin-top: 0 }
+}
+@media only screen and (max-width:480px) { 
+    .navbar-default .navbar-nav > li > a { color: #fff }
+}
+.navbar-default.menu-shrink {
+    background-color: #040e18;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+@media only screen and (max-width:480px) { 
+    .menu-top {
+        color: #fff !important;
+        margin-left: 0px;
+        padding: 10px 0;
+    }
+}
+.navbar-default.menu-shrink li a:hover { color: #eec23b  !important }
+.navbar-default .navbar-toggle {
+    background: #fff none repeat scroll 0 0;
+    color: #eec23b  !important;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { background-color: #fff }
+.navbar-default .navbar-toggle .icon-bar { background-color: #eec23b }
+/*
+* ----------------------------------------------------------------------------------------
+* 02.END BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/
+/*
+ * ----------------------------------------------------------------------------------------
+ *  03.START HOME DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+.home_overlay {
+    background: url(../img/bg-overlay.png) center center repeat;
+    height: 100%;
+}
+.hero { height: 650px }
+.hero-text { padding-top: 250px }
+.hero-text h1 {
+    color: #fff;
+    font-size: 65px;
+    line-height: 65px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+@media only screen and (max-width:768px) { 
+    .hero-text h1 { font-size: 50px }
+}
+@media only screen and (max-width:480px) { 
+    .hero-text h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+@media only screen and (max-width:360px) { 
+    .hero-text h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+.hero-text p {
+    color: #fff;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+@media only screen and (max-width:320px) { 
+    .hero-text p { font-size: 18px }
+}
+.btn-home-bg {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 2px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    font-family: montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.2s ease 0s;
+}
+.btn-home-bg:hover,
+.btn-home-bg:focus {
+    background: #eec23b;
+    border: 2px solid #eec23b;
+    color: #fff;
+}
+@media only screen and (max-width:320px) { 
+    .btn-home-bg {
+        margin-right: 0;
+        padding: 10px;
+    }
+}
+
+/*START HTML5 VIDEO DESIGN*/
+.html-video {
+    top: 0%;
+    left: 0%;
+    max-height: 700px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.html-video:before {
+    content: "";
+    background: rgba(0,0,0,0.4) none repeat scroll 0 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slider-caption {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    z-index: 15;
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+.slider-caption h2 { padding-top: 100px }
+video { min-width: 100% }
+/*END HTML5 VIDEO DESIGN*/
+/*
+ * ----------------------------------------------------------------------------------------
+ *  03.END HOME DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+/*
+ * ----------------------------------------------------------------------------------------
+ *  04.START ABOUT US DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+.about_us p { margin-bottom: 0 }
+/*
+ * ----------------------------------------------------------------------------------------
+ *  04.END ABOUT US DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+/*
+* ----------------------------------------------------------------------------------------
+*  05.START WHY CHOOSE US DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.single_why { padding-top: 100px }
+@media only screen and (max-width:768px) { 
+    .single_why { padding-top: 0px }
+}
+@media only screen and (max-width:480px) { 
+    .single_why { padding-top: 50px }
+}
+.single_why i {
+    border: 1px solid #aaa;
+    border-radius: 50px;
+    color: #eec23b;
+    font-size: 26px;
+    height: 65px;
+    line-height: 65px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 65px;
+}
+.single_why h3 { color: #aaa;
+text-transform: capitalize; }
+.single_why span {
+    background: #eec23b none repeat scroll 0 0;
+    display: block;
+    height: 2px;
+    margin: 20px auto;
+    width: 100px;
+}
+.single_why p { margin-bottom: 0 }
+.carousel-indicators li {
+    background: #aaa none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    border-radius: 12px;
+    height: 2px;
+    margin: 0 1px;
+    width: 30px;
+}
+.carousel-indicators .active {
+    height: 2px;
+    margin: 0 1px;
+    width: 30px;
+    border: 1px solid #eec23b;
+    background: #eec23b none repeat scroll 0 0;
+}
+.carousel-indicators { bottom: -60px }
+@media only screen and (max-width:480px) { 
+    .carousel-indicators { bottom: -60px }
+}
+/*
+* ----------------------------------------------------------------------------------------
+*  05.END WHY CHOOSE US DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+*  06.START FEATURE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.single_feature { transition: .7s }
+@media only screen and (max-width:768px) { 
+    .single_feature { margin-bottom: 40px }
+}
+.single_feature p {
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.s_featicon_wrap {
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    color: #eec23b;
+    display: inline-block;
+    font-size: 25px;
+    height: 65px;
+    line-height: 65px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 65px;
+    transition: .5s;
+    position: relative;
+}
+.s_featicon_wrap:after {
+    border: 5px solid #e8e8e9;
+    border-radius: 50%;
+    content: "";
+    height: 75px;
+    left: -6px;
+    opacity: 0;
+    position: absolute;
+    top: -6px;
+    transform: scale(1.5);
+    transition: all 0.5s ease 0s;
+    width: 75px;
+}
+.single_feature:hover .s_featicon_wrap:after {
+    left: -6px;
+    opacity: 1;
+    top: -6px;
+    transform: scale(1);
+}
+.single_feature h3 {
+margin-bottom: 0;
+font-size:18px;
+position: relative;
+text-transform: uppercase;
+transition: all 0.5s ease 0s;
+color: #aaa;
+}
+.single_feature .divider {
+    width: 40px;
+    height: 1px;
+    margin: 0 auto;
+    background: #eec23b;
+    display: inline-block;
+}
+.single_feature:hover .s_featicon_wrap {
+    background: #eec23b;
+    color: #fff;
+    border-color: #eec23b;
+}
+.single_feature:hover h3 { color: #eec23b }
+/*
+* ----------------------------------------------------------------------------------------
+*  06.END FEATURE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+ * ----------------------------------------------------------------------------------------
+ *  07.START COUNT DOWN DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+.counter_feature { background: #040E18 none repeat scroll 0 0 }
+.counter {
+    background: #09121b none repeat scroll 0 0;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+.counter span {
+    background: #eec23b none repeat scroll 0 0;
+    display: block;
+    height: 2px;
+    margin: 15px auto;
+    width: 60px;
+}
+@media only screen and (max-width:480px) { 
+    .counter { margin-bottom: 10px }
+}
+.counter h2 {
+    color: #fff;
+    font-weight: 700;
+}
+.counter p {
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+@media only screen and (max-width:768px) { 
+    .counter p { font-size: 13px }
+}
+@media only screen and (max-width:360px) { 
+    .counter p { font-size: 12px }
+}
+@media only screen and (max-width:320px) { 
+    .counter p { font-size: 20px }
+}
+/*
+ * ----------------------------------------------------------------------------------------
+ *  07.END COUNT DOWN DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+/*
+ * ----------------------------------------------------------------------------------------
+ *  08.START SCREENSHOT DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+.s-slider .item {margin: 5px; }
+.s-slider .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.owl-theme .owl-controls {
+    margin-top: 50px;
+    text-align: center;
+}
+.owl-theme .owl-controls .owl-page { display: inline-block }
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div { cursor: pointer }
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 5px 7px;
+    border-radius: 20px;
+    background-color: #eec23b  !important;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span { background-color: #fff }
+/*
+ * ----------------------------------------------------------------------------------------
+ *  08.END SCREENSHOT DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+/*
+* ----------------------------------------------------------------------------------------
+* 09.START TEAM DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+@media only screen and (max-width:768px) { 
+    .tema-member { margin-bottom: 20px }
+}
+.tema-member .team-thumbnail { position: relative }
+.tema-member .team-thumbnail .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    bottom: -1px;
+    height: 100%;
+    background-color: rgba(238,194,59,0.8);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.info {
+    background: #eec23b none repeat scroll 0 0;
+    padding: 10px;
+}
+.tema-member .team-thumbnail .social-media {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    bottom: 0;
+    -webkit-transform: translateY(100%);
+    -moz-webkit-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.tema-member .team-thumbnail .social-media a { display: inline-block }
+.tema-member .team-thumbnail .social-media a i {
+    font-size: 20px;
+    color: #fff;
+    width: 48px;
+    margin: -2px;
+    line-height: 48px;
+    height: 48px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.tema-member .team-thumbnail .social-media a i:hover {
+    background: #fff!important;
+    color: #222;
+}
+.tema-member .team-thumbnail .social-media a.facebook i { background: #507CBE }
+.tema-member .team-thumbnail .social-media a.twitter i { background: #63CDF1 }
+.tema-member .team-thumbnail .social-media a.google i { background: #F16261 }
+.tema-member .team-thumbnail .social-media a.linkedin i { background: #90CADD }
+.tema-member .info h3 {
+    margin-top: 0;
+	font-size:18px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.tema-member .info p {
+    color: #fff;
+    margin-bottom: 0;
+}
+.tema-member:hover .social-media {
+    -webkit-transform: translateY(-90%);
+    -moz-webkit-transform: translateY(-90%);
+    -webkit-transform: translateY(-90%);
+    -ms-transform: translateY(-90%);
+    transform: translateY(-90%);
+}
+.tema-member:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 09.END TEAM DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+ * ----------------------------------------------------------------------------------------
+ * 10.START TESTIMONIAL DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+.testimonial_overlay { background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0 }
+.single_testimonial {
+    background: #fff none repeat scroll 0 0;
+    border: 4px double #fff;
+    padding: 30px;
+}
+.single_testimonial img {
+    border: 4px solid #eec23b;
+    border-radius: 50px;
+    float: left;
+    height: 100px;
+    margin-right: 10px;
+    width: 100px;
+}
+.single_testimonial h3 {
+    color: #333;
+	font-size:18px;
+    text-transform: capitalize;
+}
+.single_testimonial p {color: #444;
+text-align: justify;}
+.single_testimonial i { color: #eec23b }
+/*
+ * ----------------------------------------------------------------------------------------
+ *  10.END TESTIMONIAL DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+/*
+* ----------------------------------------------------------------------------------------
+* 11.START FEATURED VIDEO DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.video { background: #040E18 }
+.feature-title,
+.feature-title-text { color: #fff }
+iframe {
+    height: 480px;
+    width: 850px;
+    border: none;
+}
+@media only screen and (max-width:768px) { 
+    iframe { width: 100% }
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 11.END FEATURED VIDEO DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 12.START PRICING DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.pricing_table { background: #fff }
+.pricing_table .plan.recommended .head { margin-bottom: 20px }
+.plan {
+    background: #f8f8f8 none repeat scroll 0 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    min-height: 100px;
+    padding-bottom: 25px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+@media only screen and (max-width:480px) { 
+    .plan { margin-bottom: 30px }
+}
+.plan .head {
+    color: #333;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+.plan .head h1,
+.plan .head h2,
+.plan .head h3 {
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+}
+.plan .price { border-top: 1px solid #eee }
+.plan .price h3 {
+    font-size: 82px;
+    line-height: 1;
+    vertical-align: top;
+    color: #333;
+}
+.plan .price h3 span {
+    font-size: 38px;
+    vertical-align: top;
+    position: relative;
+    margin: 6px 0 0 -7px;
+    display: inline-block;
+}
+.plan .price h4 {
+    color: #aaa;
+    font-size: 14px;
+}
+.plan ul {
+    list-style-type: none;
+    padding: 20px;
+}
+.plan ul li {
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: -1px;
+    padding: 10px 15px;
+    text-transform: capitalize;
+}
+.plan ul li a {
+    text-decoration: underline;
+    color: #e6e9ed;
+}
+.plan.recommended {
+    box-shadow: 0 0 22px rgba(10, 10, 10, 0.42);
+    position: relative;
+    z-index: 99;
+}
+.plan.recommended .btn { margin-bottom: 10px }
+/*
+* ----------------------------------------------------------------------------------------
+* 12.END PRICING DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+ * ----------------------------------------------------------------------------------------
+ * 13.START DOWNLOAD BUTTON DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+.download_app { padding-top: 60px }
+.single_download a {
+    color: #fff;
+    padding: 40px;
+    display: block;
+}
+.no-padding { padding: 0px }
+.single_download i {
+    color: #fff;
+    font-size: 50px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    display: block;
+}
+.single_download small { color: #fff }
+.single_about_one {
+    background: #E3B835;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+.single_about_one:hover { background: #040E18 }
+.single_about_two {
+    background: #eec23b;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+.single_about_two:hover { background: #040E18 }
+.single_about_three {
+    background: #F2C640;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+.single_about_three:hover { background: #040E18 }
+.single_download h3 {
+    color: #fff;
+	font-size:18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+/*
+ * ----------------------------------------------------------------------------------------
+ *  13.END DOWNLOAD BUTTON DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+/*
+* ----------------------------------------------------------------------------------------
+* 14.START CONTACT FORM DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.form-control {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    border-radius: 0;
+    box-shadow: none;
+    color: #333;
+    font-family: "Montserrat",sans-serif;
+    height: 42px;
+}
+.form-control:hover,
+.form-control:focus {
+    border: 1px solid #eec23b;
+    box-shadow: none;
+    outline: 0 none;
+}
+.mb0 { margin-bottom: 0 }
+.actions input {background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+color: #aaa;}
+.map{height:300px;}
+/*
+* ----------------------------------------------------------------------------------------
+* 14.END CONTACT FORM DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 15.START NEWSLETTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.newsletter {
+    background: #040E18;
+    padding-top: 60px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+@media only screen and (max-width:768px) { 
+    .newsletter { font-size: 18px }
+}
+.footer_logo img { display: inline }
+.footer_logo span {
+    background: #fff none repeat scroll 0 0;
+    display: block;
+    height: 2px;
+    margin: 20px auto;
+    width: 75px;
+}
+.newsletter_title {
+    color: #fff;
+	font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+/*START NEWSLETTER FORM & BUTTON*/
+.subscribe_input input {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #aaa;
+    float: left;
+    width: 400px;
+}
+@media only screen and (max-width:768px) { 
+    .subscribe_input input {
+        float: left;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width:480px) { 
+    .subscribe_input input {
+        float: none;
+        margin-bottom: 20px;
+    }
+}
+.subscribe_input button {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+    color: #fff;
+    font-family: "Montserrat",sans-serif;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.2s ease 0s;
+    margin-left: 20px;
+}
+.subscribe_input button:hover {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #222;
+}
+/*END NEWSLETTER FORM & BUTTON*/
+/*START SOCIAL PROFILE*/
+.footer_social { padding-bottom: 60px }
+.footer_social h4 {
+    color: #fff;
+	font-size:24px;
+    padding: 20px 0;
+}
+.social_icon ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.social_icon ul li { display: inline }
+.social_icon ul li a i {
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+    height: 45px;
+    margin: 2px;
+    padding: 13px;
+    transition: all 0.2s ease 0s;
+    width: 45px;
+}
+.social_icon ul li a i:hover {
+    background: #eec23b;
+    color: #fff;
+}
+.facebook { background: #345289 }
+.twitter { background: #006E99 }
+.dribbble { background: #FF4C83 }
+.instagram { background: #8B5C42 }
+.google { background: #D14031 }
+.youtube { background: #CF1711 }
+/*END SOCIAL PROFILE*/
+/*START COPYRITGHT*/
+.copyright {
+    background: #09121B;
+    padding: 30px 0;
+}
+.copyright p {
+    font-family: "Montserrat",sans-serif;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+.copyright p span { color: #eec23b }
+/*END COPYRITGHT*/
+/*
+* ----------------------------------------------------------------------------------------
+* 15.END NEWSLETTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
