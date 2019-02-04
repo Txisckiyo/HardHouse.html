@@ -1,7 +1,7 @@
 body {
     background-color: #000000;
     color: #aaaaaa;
-    font-family: "Source Sans Pro",sans-serif;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;;
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
@@ -15,7 +15,7 @@ h4,
 h5,
 h6 {
     color: #f19808;
-    font-family: "Montserrat",sans-serif;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;;
     font-weight: 700;
     line-height: 100%;
     margin: 0;
@@ -939,9 +939,4 @@ color: #aaa;}
     text-transform: capitalize;
 }
 .copyright p span { color: #eec23b }
-/*END COPYRITGHT*/
-/*
-* ----------------------------------------------------------------------------------------
-* 15.END NEWSLETTER DESIGN
-* ----------------------------------------------------------------------------------------
-*/
+
